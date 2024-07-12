@@ -1,0 +1,10 @@
+x='my name is fardeen'
+
+y='ing'
+
+z=x+y
+
+if len(x)>3:
+
+    print(z)
+
