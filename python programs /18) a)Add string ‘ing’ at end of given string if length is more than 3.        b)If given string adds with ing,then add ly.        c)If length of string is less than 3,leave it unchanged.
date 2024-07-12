@@ -7,4 +7,5 @@ z=x+y
 if len(x)>3:
 
     print(z)
-
+else:
+    print(x)
