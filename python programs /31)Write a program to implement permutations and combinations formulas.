@@ -1,0 +1,27 @@
+
+
+def permutations(n, r):
+    """
+    Calculate the number of permutations (nPr) of n items taken r at a time.
+    Formula: nPr = n! / (n - r)!
+    """
+    if r > n:
+        return 0
+    return math.factorial(n) // math.factorial(n - r)
+
+def combinations(n, r):
+    """
+    Calculate the number of combinations (nCr) of n items taken r at a time.
+    Formula: nCr = n! / (r! * (n - r)!)
+    """
+    if r > n:
+        return 0
+    return math.factorial(n) // (math.factorial(r) * math.factorial(n - r))
+
+# Example usage
+n = 5
+r = 3
+
+print(f"Permutations (P({n}, {r})) = {permutations(n, r)}")
+print(f"Combinations (C({n}, {r})) = {combinations(n, r)}")
+```
